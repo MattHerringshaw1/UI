@@ -1,0 +1,25 @@
+menu {
+    background-color: aliceblue;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+
+menu li {
+    margin: 10px;   
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    menu {
+        flex-direction: column;
+    }
+    
+}
+
+.featured_photo {
+    width: 50%;
+    height: auto;
+}
