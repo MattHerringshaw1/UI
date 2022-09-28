@@ -1,0 +1,19 @@
+.product {
+    position: relative;
+    
+
+}
+
+.deal {
+    width: 10%;
+    position: absolute;
+    top: 50%
+    
+}
+
+.item {
+    width: 100%; 
+    height: 100%; 
+    
+    
+}

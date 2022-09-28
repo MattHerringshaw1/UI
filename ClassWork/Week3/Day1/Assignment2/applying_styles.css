@@ -1,0 +1,12 @@
+body {
+    background-color: yellow;
+}
+
+ul {
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul li:nth-child(3) {
+    background-color: green;
+}
