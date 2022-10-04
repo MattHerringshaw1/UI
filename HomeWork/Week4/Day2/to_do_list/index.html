@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+<!--    enter task
+        pending task List 
+            checkbox on left
+            remove button on right
+            can switch b/t lists
+        completed task List
+            checkbox on left
+            remove button on right
+            can switch b/t lists
+    -->
+
+    <div>
+        
+        <h1>To-Do List</h1>
+       
+        <label>Enter task:</label>
+        <input id = "toDoTextBox" onkeyup = "erase()" type="text" placeholder="Task"/>
+        <button id = "btnAddTask" disabled>Add Task</button>
+
+        <div>
+            <h2>Pending Task</h2>
+            <ul id="taskPending">
+            
+            </ul>
+        </div>
+
+        <div>
+            <h2>Completed Task</h2>
+            <ul id="taskCompleted">
+                
+            </ul>
+        </div>
+
+    </div>    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
