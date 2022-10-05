@@ -1,0 +1,35 @@
+@media (max-width: 480px) {
+    body {
+        background-color: blue;
+    }
+
+    .paragraph {
+        display: none;
+    }
+
+    .info {
+        display: none;
+    }
+
+    #heading {
+        display: flex;
+        align-content: center;
+    }
+
+    .img {
+        width: 50%;
+        height: 50%;
+    }
+    
+}
+
+
+.main {
+    display: flex;
+    
+}
+
+
+.parent {
+    list-style: none
+}
