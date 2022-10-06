@@ -1,19 +1,18 @@
 
-const nameTextBox = document.getElementById("nameTextBox")
+const nameTextBox1 = document.getElementById("nameTextBox1")
+const nameTextBox2 = document.getElementById("nameTextBox2")
 const submitButton = document.getElementById("submitButton")
 const messageHeading = document.getElementById("messageHeading")
 
 submitButton.addEventListener("click", function() {
 
-    const year = 2022
-    const name = nameTextBox.value
+    
+    const firstName = nameTextBox1.value
+    const lastName = nameTextBox2.value
 
-
-    const message = `Hello ${name}, Welcome to ${year} Cohort.`
+    const message = `Hello ${lastName}, ${firstName}.`
 
     messageHeading.innerHTML = message 
 
 
 })
-
-console.log(nameTextBox)
