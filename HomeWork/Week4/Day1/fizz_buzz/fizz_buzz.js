@@ -9,11 +9,15 @@ function fizzBuzz(number) {
     else if (number % 5 == 0) { 
         console.log("Buzz")
     }
+    else {
+        console.log("Null")
+    }
 }
 
 fizzBuzz(9)
 fizzBuzz(15)
 fizzBuzz(10)
+fizzBuzz(22.3)
 
 // number = int(input("Enter a number: "))
 // if (number % 3) ==0 and (number % 5) == 0:
