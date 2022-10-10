@@ -23,12 +23,39 @@ function getAllMovies(moviesCallBack) {
 function displayMovies(movies) {
     const movieItems = movies.map(function(movie) {
         return `
-        <li>
-            <label>Title: ${movie.Title}</label>
-            <img src = ${movie.Poster} />
-        </li>
+        <div id="phone-container">
+            <li>
+                <label class="title">Movie Name: ${movie.Title}</label>
+            </li>
+            <li>
+                <img class="pic"src = ${movie.Poster} />
+            </li>
+        </div>
         `
     })
 
     superHeroMoviesUL.innerHTML = movieItems.join("")
 }
+            // insert above after getting poster img
+            // <li>
+            //     <label onclick='getMovieInfo("${movie.imdbID}")'>
+            //     </label>
+            // <li/>
+
+
+
+// const movieInfo = document.getElementById("movieInfo")
+// function getMovieInfo(movieId) {
+    
+//     let request = new XMLHttpRequest
+//     request.addEventListener("load", function() {
+//         const result = JSON.parse(this.responseText)
+//         let oneMovie = result
+//         movieId(oneMovie)
+//     })
+
+//     request.open("GET", `http://www.omdbapi.com/?i=${movieId}&apikey=22b16cb1`)
+//     request.send()  
+
+// }    
+
