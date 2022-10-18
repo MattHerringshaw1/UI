@@ -35,15 +35,23 @@ async function getNewsArticle() {
 
         for (const [key, value] of Object.entries(articles)) {
             if (key === "id") {
-                console.log(value)
+                // value = [value];
+                // console.log(value)
+
             }
-        }
+
+        //     return value.map(item, index) => <p key={index}> {item.name}</p>
+
+        
 
 
         let article = Object.entries(articles)
         console.log(article)
 
-        let blah = article.map(function(result) {
+        articleUL.innerHTML = article.by
+
+
+        let info = article.map(function(result) {
             return `
             <li>
                 <a href="${result.url}">${result.title}</a>
@@ -53,13 +61,13 @@ async function getNewsArticle() {
             </li>
             `
         })
-        articleUL.innerHTML = blah.join("")
+        articleUL.innerHTML = info.join("")
 
-
+    }
     // } catch {
     //     console.log(error)
     // }
-}
 
+}
 getNewsArticle()
 
